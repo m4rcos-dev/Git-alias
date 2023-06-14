@@ -26,7 +26,7 @@ cd ~
 - Run the command below to download the script:
 
 ```
-wget https://
+wget https://raw.githubusercontent.com/m4rcos-dev/Git-alias/main/git-alias.sh
 ```
 
 - Give permissions to the .sh file to run the script:
