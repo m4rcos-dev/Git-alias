@@ -1,3 +1,5 @@
+#### EN - English [(Versão em Português Brasil aqui)](https://github.com/m4rcos-dev/Git-alias/blob/main/README_pt-br.md)
+
 <h1 align="center">🎉 Welcome to the repository creating git shortcuts </h1>
 
 <h1 align="center">
