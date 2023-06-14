@@ -1,11 +1,13 @@
 <h1 align="center">🎉 Boas-vindas ao repositório criando atalhos do git </h1>
 
-![git aliases](https://github.com/m4rcos-dev/FullStack-vehicle-catalog/assets/104791582/5001a8ce-1737-47b3-98aa-9933375e1a3a)
+<h1 align="center">
+  <img src="https://github.com/m4rcos-dev/FullStack-vehicle-catalog/assets/104791582/5001a8ce-1737-47b3-98aa-9933375e1a3a">
+</h1>
 
 <p>A proposta do projeto é facilitar a criação de atalhos para padronizar e facilitar o uso do git no dia a dia</p>
 <p>Para isso utilizei o como base para criação dos atalhos o repositorio abaixo:</p>
 
-[padrão de commits por iuricode](https://github.com/iuricode/padroes-de-commits )
+[padrão de commits por iuricode](https://github.com/iuricode/padroes-de-commits)
 
 <p>Que tem como base a documentação do:</p>
 
@@ -17,9 +19,9 @@
 
 - Navege até um diretório local de sua preferência para baixar .sh com o script, por exemplo:
 
-````
+```
 cd ~
-````
+```
 
 - Execute o comando abaixo para baixar o script:
 
@@ -38,11 +40,15 @@ chmod +x git-alias.sh
 ```
 ./git-alias.sh
 ```
+
 Após esses passos os atalhos estarão configurados para verificar utilize o comando:
+
 ```
 git myalias
 ```
+
 Se tudo estiver corrido bem tera uma saída parecida com essa:
+
 ```caddpack=!f() { git commit -m " :heavy_plus_sign: build: $1"; }; f
 cbug=!f() { git commit -m " :bug: fix: $1"; }; f
 cbuildconfig=!f() { git commit -m " :package: build: $1"; }; f
@@ -65,9 +71,11 @@ pushbranch=push -u origin
 ```
 
 ### Mac OS
+
 🚧 EM CONTRUÇÃO
 
 ### Windows
+
 🚧 EM CONTRUÇÃO
 
 <br>
@@ -99,10 +107,13 @@ O commit semântico possui os elementos estruturais abaixo (tipos), que informam
 ### Por padrão os atalhos para os commits sempre inicializam com a letra c de commit seguido com nome do atalho do commit e menssagem que definada entre "" na hora do commit.
 
 exemplo
+
 ```
 git cfeat "add new component"
 ```
+
 esse é um atalho para o comando
+
 ```
 git commit -m ":sparkles: feat: add new component"
 ```
@@ -232,3 +243,18 @@ git commit -m ":sparkles: feat: add new component"
   </tbody>
 </table>
 
+## 🧔 Autor
+
+<div class="badge-base LI-profile-badge" data-locale="pt_BR" data-size="medium" data-theme="dark" data-type="VERTICAL" data-vanity="dev-marcospaulo" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://br.linkedin.com/in/dev-marcospaulo?trk=profile-badge">Marcos Paulo Pereira</a></div>
+
+<div align="center">
+  <br/>
+    <div>
+      <h1>Open Source</h1>
+          <p>
+      A permissão é concedida, gratuitamente, a qualquer pessoa que obtenha uma cópia deste arquivo, com restrição de publicar como seu repositório. Porém, sem restrição nos direitos de fazer um fork e modificar o mesmo.
+    </p>
+      <sub>Copyright © 2023 - <a href="https://github.com/m4rcos-dev">m4rcos-dev 💖</sub></a>
+    </div>
+    <br/>
+</div>
