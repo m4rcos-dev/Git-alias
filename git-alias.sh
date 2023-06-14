@@ -68,6 +68,10 @@ echo "alias cdoc adicionado com sucesso"
 git config --global alias.pushbranch 'push -u origin'
 echo "alias pushbranch adicionado com sucesso"
 
+# Alias: git pullbranch - é o comando git pull origin aguardando informar a branch
+git config --global alias.pullbranch 'pull origin'
+echo "alias pullbranch adicionado com sucesso"
+
 # Alias: git myalias - verifica todos os alias criados no sistema
 git config --global alias.myalias "! git config -l | grep ^alias\. | cut -c 7- | sort"
 echo "alias myalias adicionado com sucesso"
