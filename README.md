@@ -167,7 +167,7 @@ git commit -m ":sparkles: feat: add new component"
        <td>verification if the tests created are passing</td>
      </tr>
      <tr>
-       <td>git creator</td>
+       <td>git crefactor</td>
        <td><code>commit header in message with ♻️ recycle: </code></td>
        <td>code refactoring</td>
      </tr>
