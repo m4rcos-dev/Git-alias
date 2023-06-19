@@ -17,7 +17,7 @@ git config --global alias.cinit '!f() { git commit -m ":tada: init: $1"; }; f'
 echo "alias cinit adicionado com sucesso"
 
 # Alias: git cteststart - commit com cabeçalho na mensagem com 🧪 test: permitindo completar a mensagem
-git config --global alias.cteststart '!f() { git commit -m " :test__tube: test: $1"; }; f'
+git config --global alias.cteststart '!f() { git commit -m " :test_tube: test: $1"; }; f'
 echo "alias cteststart adicionado com sucesso"
 
 # Alias: git ctestfinal - commit com cabeçalho na mensagem com ✔️ test: permitindo completar a mensagem
