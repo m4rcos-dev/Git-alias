@@ -69,7 +69,8 @@ ctestfinal=!f() { git commit -m ":heavy_check_mark: test: $1"; }; f
 ctestfinish=!f() { git commit -m " :whit_check_mark: test: $1"; }; f
 cteststart=!f() { git commit -m " :test__tube: test: $1"; }; f
 myalias=! git config -l | grep ^alias\. | cut -c 7- | sort
-pushbranch=push -u origin
+pushupstream=push -u origin
+pushbranch=push origin
 ```
 
 ### MacOS
@@ -227,9 +228,14 @@ git commit -m ":sparkles: feat: add new component"
      </tr>
    </thead>
   <tbody>
+    <tr>
+       <td>git pushupstream</td>
+       <td><code>is the command git push -u origin waiting to inform the branch</code></td>
+       <td>push to repository on selected branch and set upstream</td>
+     </tr>
      <tr>
        <td>git pushbranch</td>
-       <td><code>is the command git push -u origin waiting to inform the branch</code></td>
+       <td><code>is the command git push origin waiting to inform the branch</code></td>
        <td>push to repository on selected branch</td>
      </tr>
      <tr>

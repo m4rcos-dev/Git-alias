@@ -64,9 +64,13 @@ echo "alias cinfra adicionado com sucesso"
 git config --global alias.cdoc '!f() { git commit -m " :books: docs: $1"; }; f'
 echo "alias cdoc adicionado com sucesso"
 
-# Alias: git pushbranch - é o comando git push -u origin aguardando informar a branch
-git config --global alias.pushbranch 'push -u origin'
-echo "alias pushbranch adicionado com sucesso"
+# Alias: git pushupstream - é o comando git push -u origin aguardando informar a branch
+git config --global alias.pushupstream 'push -u origin'
+echo "alias pushupstream adicionado com sucesso"
+
+# Alias: git pushbranch - é o comando git push origin aguardando informar a branch
+git config --global alias.pushbranch 'push origin'
+echo "alias pushbranch adicioando com sucesso"
 
 # Alias: git pullbranch - é o comando git pull origin aguardando informar a branch
 git config --global alias.pullbranch 'pull origin'
