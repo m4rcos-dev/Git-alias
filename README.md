@@ -1,4 +1,4 @@
-#### EN - English [(Versão em Português Brasil aqui)](https://github.com/m4rcos-dev/Git-alias/blob/main/README_pt-br.md)
+#### EN - English [(Versão em Português Brasil aqui)](/README_pt-br.md)
 
 <h1 align="center">🎉 Welcome to the repository creating git shortcuts </h1>
 
@@ -17,31 +17,34 @@
 
 # 🔨 Installation
 
-### Linux - Ubuntu
+<details>
+  <summary>
+    <img alt="ubuntu logo" src="https://i.ibb.co/B2vnw7m/ubuntu.png" width="12px" height="12px"/> <strong>Linux - Ubuntu</strong>
+  </summary>
 
 - Navigate to a local directory of your choice to download the .sh with the script, for example:
 
-```
-cd ~
-```
+  ```
+  cd ~
+  ```
 
 - Run the command below to download the script:
 
-```
-wget https://raw.githubusercontent.com/m4rcos-dev/Git-alias/main/git-alias.sh
-```
+  ```
+  wget https://raw.githubusercontent.com/m4rcos-dev/Git-alias/main/git-alias.sh
+  ```
 
 - Give permissions to the .sh file to run the script:
 
-```
-chmod +x git-alias.sh
-```
+  ```
+  chmod +x git-alias.sh
+  ```
 
 - Run the script:
 
-```
-./git-alias.sh
-```
+  ```
+  ./git-alias.sh
+  ```
 
 After these steps the shortcuts will be configured to verify use the command:
 
@@ -51,7 +54,8 @@ git myalias
 
 If all goes well, you will have an output similar to this:
 
-```caddpack=!f() { git commit -m " :heavy_plus_sign: build: $1"; }; f
+```
+caddpack=!f() { git commit -m " :heavy_plus_sign: build: $1"; }; f
 cbug=!f() { git commit -m " :bug: fix: $1"; }; f
 cbuildconfig=!f() { git commit -m " :package: build: $1"; }; f
 cconfig=!f() { git commit -m ":wrench: chore: $1"; }; f
@@ -73,13 +77,77 @@ pushupstream=push -u origin
 pushbranch=push origin
 ```
 
-### MacOS
+</details>
+<details>
+  <summary>
+    <img alt="Ficheiro:Windows logo.png" src="https://i.ibb.co/ZYZB0pL/Windows-logo.png" width="12px" height="12px"> <strong>Windows</strong>
+  </summary>
 
-🚧 UNDER CONSTRUCTION
+#### Only in PowerShell
 
-### windows
+- Navigate to a local directory of your choice to download the .ps1 with the script, for example:
 
-🚧 UNDER CONSTRUCTION
+  ```ps1
+  cd ~
+  ```
+
+- Run the command below to download the script:
+
+  ```ps1
+  Invoke-WebRequest "https://raw.githubusercontent.com/m4rcos-dev/Git-alias/main/git-alias.ps1" -OutFile "git-alias.ps1"
+  ```
+
+- By default, PowerShell does not allow script execution without restrictions. You may need to adjust the PowerShell execution policy to allow script execution. To do this, you can open PowerShell with administrator privileges and run the following command:
+
+  ```ps1
+  Set-ExecutionPolicy RemoteSigned
+  ```
+
+- Run the script:
+
+  ```
+  ./git-alias.ps1
+  ```
+
+After these steps the shortcuts will be configured to verify use the command:
+
+```ps1
+git myalias
+```
+
+If all goes well, you will have an output similar to this:
+
+```
+alias.cconfig !f() { git commit -m "🔧 chore: $1"; }; f
+alias.cstyle !f() { git commit -m "💄 style: $1"; }; f
+alias.cfeat !f() { git commit -m "✨ feat: $1"; }; f
+alias.cinit !f() { git commit -m "🎉 init: $1"; }; f
+alias.cteststart !f() { git commit -m " 🧪 test: $1"; }; f
+alias.ctestfinal !f() { git commit -m "✔️ test: $1"; }; f
+alias.ctestfinish !f() { git commit -m " ✅ test: $1"; }; f
+alias.crefactor !f() { git commit -m " ♻️ refactor: $1"; }; f
+alias.cbuildconfig !f() { git commit -m " 📦 build: $1"; }; f
+alias.caddpack !f() { git commit -m " ➕ build: $1"; }; f
+alias.cremovepack !f() { git commit -m " ➖ build: $1"; }; f
+alias.cbug !f() { git commit -m " 🐛 fix: $1"; }; f
+alias.cfix !f() { git commit -m " 💥 fix: $1"; }; f
+alias.cperf !f() { git commit -m " ⚡ perf: $1"; }; f
+alias.cinfra !f() { git commit -m " 🧱 ci: $1"; }; f
+alias.cdoc !f() { git commit -m " 📚 docs: $1"; }; f
+alias.pushupstream push -u origin
+alias.pushbranch push origin
+alias.pullbranch pull origin
+alias.myalias config --global --get-regexp alias
+```
+
+</details>
+
+<details>
+  <summary>
+    <img src="https://i.ibb.co/nBc0hvH/download.png" width="12px" height="12px" alt="macOS image"/> <strong>MacOS</strong> 🚧 UNDER CONSTRUCTION
+  </summary>
+
+</details>
 
 <br>
 
