@@ -15,41 +15,45 @@
 
 # 🔨 Instalação
 
-### Linux - Ubuntu
+<details>
+  <summary>
+    <img alt="ubuntu logo" src="https://i.ibb.co/B2vnw7m/ubuntu.png" width="12px" height="12px"/> <strong>Linux - Ubuntu</strong>
+  </summary>
 
 - Navege até um diretório local de sua preferência para baixar .sh com o script, por exemplo:
 
-```
-cd ~
-```
+  ```sh
+  cd ~
+  ```
 
 - Execute o comando abaixo para baixar o script:
 
-```
-wget https://raw.githubusercontent.com/m4rcos-dev/Git-alias/main/git-alias.sh
-```
+  ```sh
+  wget "https://raw.githubusercontent.com/m4rcos-dev/Git-alias/main/git-alias.sh"
+  ```
 
 - Dê permissões ao arquivo .sh para executar o script:
 
-```
-chmod +x git-alias.sh
-```
+  ```sh
+  chmod +x git-alias.sh
+  ```
 
 - Execute o script:
 
-```
-./git-alias.sh
-```
+  ```sh
+  ./git-alias.sh
+  ```
 
 Após esses passos os atalhos estarão configurados para verificar utilize o comando:
 
-```
+```sh
 git myalias
 ```
 
 Se tudo estiver corrido bem tera uma saída parecida com essa:
 
-```caddpack=!f() { git commit -m " :heavy_plus_sign: build: $1"; }; f
+```
+caddpack=!f() { git commit -m " :heavy_plus_sign: build: $1"; }; f
 cbug=!f() { git commit -m " :bug: fix: $1"; }; f
 cbuildconfig=!f() { git commit -m " :package: build: $1"; }; f
 cconfig=!f() { git commit -m ":wrench: chore: $1"; }; f
@@ -71,13 +75,74 @@ pushupstream=push -u origin
 pushbranch=push origin
 ```
 
-### Mac OS
+</details>
+<details>
+  <summary>
+    <img alt="Ficheiro:Windows logo.png" src="https://i.ibb.co/ZYZB0pL/Windows-logo.png" width="12px" height="12px"> <strong>Windows</strong>
+  </summary>
 
-🚧 EM CONTRUÇÃO
+- Navege até um diretório local de sua preferência para baixar .ps1 com o script, por exemplo:
 
-### Windows
+  ```ps1
+  cd ~
+  ```
 
-🚧 EM CONTRUÇÃO
+- Execute o comando abaixo para baixar o script:
+
+  ```ps1
+  Invoke-WebRequest "https://raw.githubusercontent.com/m4rcos-dev/Git-alias/main/git-alias.ps1" -OutFile "git-alias.ps1"
+  ```
+
+- Por padrão, o PowerShell não permite a execução de scripts sem restrições. Você pode precisar ajustar a política de execução do PowerShell para permitir a execução de scripts. Para fazer isso, você pode abrir o PowerShell com privilégios de administrador e executar o seguinte comando:
+
+  ```ps1
+  Set-ExecutionPolicy RemoteSigned
+  ```
+
+- Execute o script:
+
+  ```
+  ./git-alias.ps1
+  ```
+
+Após esses passos os atalhos estarão configurados para verificar utilize o comando:
+
+```ps1
+git myalias
+```
+
+Se tudo estiver corrido bem terá uma saída parecida com essa:
+
+```
+alias.cconfig !f() { git commit -m "🔧 chore: $1"; }; f
+alias.cstyle !f() { git commit -m "💄 style: $1"; }; f
+alias.cfeat !f() { git commit -m "✨ feat: $1"; }; f
+alias.cinit !f() { git commit -m "🎉 init: $1"; }; f
+alias.cteststart !f() { git commit -m " 🧪 test: $1"; }; f
+alias.ctestfinal !f() { git commit -m "✔️ test: $1"; }; f
+alias.ctestfinish !f() { git commit -m " ✅ test: $1"; }; f
+alias.crefactor !f() { git commit -m " ♻️ refactor: $1"; }; f
+alias.cbuildconfig !f() { git commit -m " 📦 build: $1"; }; f
+alias.caddpack !f() { git commit -m " ➕ build: $1"; }; f
+alias.cremovepack !f() { git commit -m " ➖ build: $1"; }; f
+alias.cbug !f() { git commit -m " 🐛 fix: $1"; }; f
+alias.cfix !f() { git commit -m " 💥 fix: $1"; }; f
+alias.cperf !f() { git commit -m " ⚡ perf: $1"; }; f
+alias.cinfra !f() { git commit -m " 🧱 ci: $1"; }; f
+alias.cdoc !f() { git commit -m " 📚 docs: $1"; }; f
+alias.pushupstream push -u origin
+alias.pushbranch push origin
+alias.pullbranch pull origin
+alias.myalias config --global --get-regexp alias
+```
+
+</details>
+<details>
+  <summary>
+    <img src="https://i.ibb.co/nBc0hvH/download.png" width="12px" height="12px" alt="macOS image"/> <strong>MacOS</strong> 🚧 EM CONTRUÇÃO
+  </summary>
+
+</details>
 
 <br>
 
